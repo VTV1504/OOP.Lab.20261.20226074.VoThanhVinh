@@ -1,0 +1,6 @@
+Exercise 6.1
+1. If the user clicks Cancel, showConfirmDialog returns CANCEL_OPTION. If the
+   dialog is closed, it returns CLOSED_OPTION. The program must handle these
+   values instead of treating them as Yes or No.
+2. Use YES_NO_OPTION for only Yes/No. For custom labels, use showOptionDialog
+   with an Object[] such as {"I do", "I don't"}.
