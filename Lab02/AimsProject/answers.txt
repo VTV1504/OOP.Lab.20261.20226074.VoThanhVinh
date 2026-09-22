@@ -1,0 +1,14 @@
+Section 10
+Java does not allow constructors DigitalVideoDisc(String title) and
+DigitalVideoDisc(String category) in the same class because parameter names are
+not part of a method signature. Both signatures are DigitalVideoDisc(String).
+
+Section 14
+An array method and a varargs method with the same component type cannot coexist:
+DigitalVideoDisc[] and DigitalVideoDisc... have the same compiled signature.
+Varargs is convenient at call sites and can also receive an existing array.
+
+Section 15
+Java is always pass by value. For object variables, the copied value is a
+reference. swap only reassigns local copies of two references. changeTitle uses
+the copied reference to mutate the same object, so the caller observes the change.
